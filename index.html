@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>网页版音乐播放器</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-1">
+                <audio src=""></audio>
+                <div class="music-massage">
+                    <p class="songName"></p>
+                    <p class="singer"></p>
+                    <p class="record" title="" data-id=""></p>
+                </div>
+                <div class="music-icon">
+                    <i class="iconfont header-lrc colored lyriced" title="显示切换">&#xe6d3;</i>
+                    <i class="iconfont header-star colored" title="收藏">&#xe60d;</i>
+                    <i class="iconfont header-heart colored" title="喜欢">&#xe611;</i>
+                </div>
+            </div>
+            <div class="header-2">
+                <!--进度条-->
+                <i class="progressbar"></i>
+            </div>
+            <div class="header-3">
+                <!--换频道、音乐播放、换曲-->
+                <div class="header-3-1">
+                    <i class="iconfont header-change btn1"  title="换频道">&#xe813;</i>
+                    <i class="iconfont header-play btn2" title="播放"></i>
+                    <i class="iconfont header-next btn3" title="换曲">&#xe812;</i>
+                </div>
+                <div class="header-3-2">
+                    <i class="iconfont header-xunhuan colored" title="循环">&#xe65a;</i>
+                    <i class="iconfont header-voice colored" title="声音">&#xe753;</i>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <!--背景图-->
+            <div class="background">
+            <!-- 歌词 -->
+                <div class="music-lyric" style="display: block">
+                    <div class="lyric-view">
+                        <ul class="lyric"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

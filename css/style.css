@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html，body{
+    background: #d2d5d6;
+    height: 100%;
+    font-family: "微软雅黑";
+    -webkit-font-smoothing: antialiased; // 抗锯齿渲染
+}
+i{
+    cursor: pointer;
+}
+.container{
+    position: relative;
+    height: 380px;
+    width: 300px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 7px #999;
+}
+.header{
+    position: absolute;
+    height: 180px;
+    width: 300px;
+    top: 0;
+    border-bottom: 1px solid #fff;
+}
+.header-1{
+    height: 100px;
+    line-height: 100px;
+    width: 280px;
+    padding: 5px 10px;
+}
+.music-massage{
+    height: 100%;
+    width: 180px;
+    display: inline-block;
+    cursor: default;
+}
+.songName{
+    font-weight: bold;
+    font-size: 22px;
+    color: #455569;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    line-height: 25px;
+    margin-top: 8px;
+    width: 180px;
+}
+.singer{
+    font-weight: bold;
+    font-size: 10px;
+    color: #455569;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    line-height: 20px;
+}
+.record{
+    font-size: 10px;
+    color: #455569;
+    margin-top: 4px;
+    line-height: 15px;
+}
+.music-icon{
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    float: right;
+    height: 30px;
+    width: 85px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+i.colored{
+    color: #cdd2d7;
+}
+i.stared{
+    color: yellow;
+}
+i.loved{
+    color: red;
+}
+.music-icon i:hover{
+    text-shadow: 1px 1px 1px #ccc;
+}
+.header-star{
+    position: absolute;
+    margin-top: -35px;
+    left: 30px;
+}
+.header-heart{
+    position: absolute;
+    margin-top: -35px;
+    left: 60px;
+}
+.header-lrc{
+    position: absolute;
+    margin-top: -35px;
+}
+.header-2{
+    position: relative;
+    display: block;
+    border: none;
+    height: 5px;
+    line-height: 5px;
+    width: 280px;
+    padding: 0;
+    left: 10px;
+    border-radius: 2px;
+    background-color: #414141;
+}
+.header-2 .progressbar{
+    display: block;
+    border:none;
+    width: 0%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #cdd2d7;
+}
+i.lyriced{
+    color: #414141
+}
+i.recycleed{
+    color: #414141
+}
+.header-3{
+    height: 30px;
+    line-height: 30px;
+    width: 280px;
+    padding: 5px 10px;
+}
+.header-3-1{
+    display: inline-block;
+    height: 100%;
+    font-size: 50px;
+    float: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header-3-2{
+    font-size: 50px;
+    float: right;
+}
+.background{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    margin-top: 180px;
+}
+.background .music-lyric{
+    width: 100%;
+    height: 160px;
+    padding: 20px 0;
+    background-color: rgba(100, 100, 100, 0.5)
+}
+.background .music-lyric .lyric-view{
+    height: 160px;
+    overflow: hidden;
+}
+.background .music-lyric ul{
+    position: relative;
+    transition: all 1s;
+}
+.lyric li{
+    padding: 5px 0 2px 0;
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px ;
+    transition: all 1s;
+}
+.lyric li.active {
+    font-size: 13px;
+    color: #ffffff;
+}
